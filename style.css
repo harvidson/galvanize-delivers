@@ -8,14 +8,13 @@
   flex-direction: column;
   justify-content: center;
   background-size: cover;
-
 }
 
 .h1 {
   font-weight: bold;
 }
 
-i {
+h5 i {
   vertical-align: bottom;
 }
 
@@ -28,11 +27,6 @@ i {
   margin: auto;
 }
 
-.col {
-  border: 1px solid red;
-}
-
-/*doesn't work--*/ 
-.key {
-  font-size: 4px;
+.wide {
+  width: 90%;
 }

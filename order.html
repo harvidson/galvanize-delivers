@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script defer src="order.js"></script>
   <title>Galvanize Delivers</title>
 </head>
 
@@ -22,9 +23,6 @@
         </ul>
       </div>
     </nav>
-
-
-
   </header>
 
   <main class="container">
@@ -35,7 +33,7 @@
             <h4>Menu</h4>
           </div>
           <div class="row">
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/burger.jpg" alt="burger">
@@ -50,7 +48,7 @@
               </div>
             </div>
 
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/pizza.jpg" alt="pizza">
@@ -64,10 +62,9 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="row">
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/ribs.jpg" alt="ribs">
@@ -82,7 +79,7 @@
               </div>
             </div>
 
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/ice_cream.jpg" alt="ice-cream">
@@ -99,7 +96,6 @@
           </div>
         </div>
 
-
         <div class="col s4">
           <div class="order">
             <h4>Order</h4>
@@ -108,63 +104,80 @@
           <table class="striped">
             <thead>
               <tr>
-                  <th>Item</th>
-                  <th> </th>
+                  <th class="col m12">Item</th>
                   <th class="right-align">Price</th>
               </tr>
             </thead>
 
             <tbody>
-              <tr>
-                <td>Royale with Cheese</td>
+              <!-- <tr>
                 <td></td>
-                <td class="right-align">$8.99</td>
-              </tr>
-              <tr>
+                <td class="right-align"></td>
+              </tr> -->
+              <!-- <tr>
                 <td>Arugula Pie</td>
-                <td></td>
                 <td class="right-align">$11.99</td>
               </tr>
               <tr>
                 <td>Smoked Swine</td>
-                <td></td>
                 <td class="right-align">$14.99</td>
               </tr>
               <tr>
                 <td>Ice Cream Biscuit</td>
-                <td></td>
                 <td class="right-align">$7.99</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
 
+          <table id="totals">
+             <tbody>
+               <tr>
+                 <td class="right-align" colspan="2">Subtotal</td>
+                 <td class="right-align subtotal"></td>
+               </tr>
+               <tr>
+                 <td class="right-align" colspan="2">Tax</td>
+                 <td class="right-align tax"></td>
+               </tr>
+               <tr>
+                 <td class="right-align" colspan="2">Total</td>
+                 <td class="right-align total"></td>
+               </tr>
+             </tbody>
+           </table>
+
+
+      <div class="row">
+        <form class="col s12">
+
           <div class="row">
-            <div class="col s6"> </div>
-            <div class="col s3 right-align">Subtotal</div>
-            <div class="col s3 right-align">$43.96</div>
-          </div>
-          <div class="row">
-            <div class="col s6"> </div>
-            <div class="col s3 right-align">Tax</div>
-            <div class="col s3 right-align">$4.40</div>
-          </div>
-          <div class="row">
-            <div class="col s6"> </div>
-            <div class="col s3 right-align">Total</div>
-            <div class="col s3 right-align">$48.36</div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix pink-text accent-2">account_circle</i>
+              <input placeholder="Bill Gates" id="name" type="text" class="validate">
+              <label for="name">Name</label>
+            </div>
           </div>
 
           <div class="row">
-            <div class="col s12"></div>
-            <div class="col s12 grey-text lighten-1">Name</div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix pink-text accent-2">phone</i>
+              <input placeholder="206-555-555" id="phone" type="tel" class="validate">
+              <label for="phone">Phone Number</label>
+            </div>
           </div>
+
           <div class="row">
-            <div class="col s12"><i class="material-icons pink-text text-accent-2">phone</i></div>
-            <div class="col s12">Bill Gates</div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix pink-text accent-2">business</i>
+              <input placeholder="One Microsoft Way Redmond, WA 98052-6399" id="address" type="text" class="validate">
+              <label for="address">Address</label>
+            </div>
           </div>
+        </form>
+      </div>
 
 <!-- how do i thicken this? -->
-            <div class="divider green accent-4"></div>
+            <!-- <div class="divider green accent-4"></div> -->
 
           <section>
             <div class="valign-wrapper white-text">
