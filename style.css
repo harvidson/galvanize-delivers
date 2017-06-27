@@ -30,3 +30,7 @@ h5 i {
 .wide {
   width: 90%;
 }
+
+div .card-content {
+  min-height: 157px;
+}

@@ -36,25 +36,9 @@ function updateTotal(event) {
 }
 
 // validation
-
-
   $('.order-button').on('click', validateName);
   $('.order-button').on('click', validatePhone);
-  $('.order-button').on('click', validateAddress);
-
-
-  // function validate() {
-  //   const $fields = {}$name, $phone, $address];
-  //
-  //   for (field of $fields) {
-  //     if (field === "") {
-  //         Materialize.toast('Please enter a ${$}', 5000);
-  //
-  //     }
-  //
-  //   }
-  //
-  // }
+  $('.order-button').on('click', validateAddress)
 
   function validateName() {
     const $name = $('input[id="name"]').val();
@@ -77,17 +61,6 @@ function updateTotal(event) {
       Materialize.toast('Please enter an address.', 5000);
     }
   }
-
-
-
-    // document.querySelector('confirmEmail').addEventListener('blur', (event) => {
-    //   if (email !== emailConfirm) {
-    //     alert("Emails do not match.")
-    //   }
-    //
-    //
-    // });
-
 
 
 // function clearOrder() {

@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="js/materialize.js"></script>
+    <script defer src="js/materialize.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script defer src="index.js"></script>
     <title>Galvanize Delivers</title>
   </head>
 
@@ -15,13 +16,18 @@
     <header>
       <nav>
         <div class="nav-wrapper blue darken-3">
-          <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+          <a href="#!" class="brand-logo">Galvanize Delivers</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul class="right hide-on-med-and-down">
+            <li><a href="order.html">Order Delivery</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
             <li><a href="order.html">Order Delivery</a></li>
           </ul>
         </div>
       </nav>
+
+
 
       <div class="hero valign-wrapper white-text">
         <h1>Fine Dining, Delivered.</h1>
@@ -33,7 +39,7 @@
     <main class="container">
       <section class="section">
         <div class="row">
-          <div class="col s4">
+          <div class="col m4">
             <div class="marketing">
               <h5 class="pink-text text-accent-2"><i class="small material-icons">shopping_basket</i> Shop Online</h5>
               <p>
@@ -41,35 +47,31 @@
               </p>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col m4">
             <h5 class="pink-text text-accent-2"><i class="small material-icons">local_shipping</i> Fast Delivery</h5>
             <p>
             Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.
             </p>
           </div>
-          <div class="col s4">
+          <div class="col m4">
             <h5 class="pink-text text-accent-2"><i class="small material-icons">local_atm</i> Great Deals</h5>
             <p>
             Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.
             </p>
           </div>
           </div>
-
-
       </section>
-
-
     </main>
 
 
     <footer class="page-footer blue darken-3">
       <div class="container">
         <div class="row">
-          <div class="col s8">
+          <div class="col m8">
             <h5 class="white-text">Galvanize Delivers</h5>
             <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
           </div>
-          <div class="col s4">
+          <div class="col m4">
             <ul>
               <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
               <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
@@ -79,11 +81,9 @@
       </div>
       <div class="footer-copyright blue darken-4">
         <div class="container">
-        © 2016 Galvanize Delivers
+        © 2016 Galvanize Delivers | Heather Arvidson
         </div>
       </div>
-
-
     </footer>
 
   </body>
